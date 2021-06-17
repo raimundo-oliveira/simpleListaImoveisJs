@@ -21,8 +21,8 @@ function adicionar() {
 
         // alerta o valor do campo
     let lista = document.getElementById('lista').innerHTML;
-    let im = document.getElementById('imagem').src = "'"+ image +"'";
     
+
           lista += "<li>"+"Titulo: " +titulo.value+ "<br>"+
                         "Descrição" +descricao.value+ "<br>"+
                         "Quartos" +quartos.value+ "<br>"+
