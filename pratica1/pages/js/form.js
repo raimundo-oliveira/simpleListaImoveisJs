@@ -81,3 +81,17 @@ function limparCampus() {
     var preco = document.getElementById('preco').value = null;
     var path = document.getElementById('image').value = null;
 }
+
+function validacao(f) {
+
+	//Verificação de campo vazio 
+    if(f.titulo.value == null || f.descricao.value == null || f.quartos.value == null || f.vagaG.value == null
+    || f.areaT.value == null || f.areaC.value == null || f.localidade.value == null 
+    || f.preco.value == null || f.image.value == "") {    
+        alert("Preencha todos os campos!");
+        return false;
+    }
+    else{
+        adicionar();
+    }
+}
